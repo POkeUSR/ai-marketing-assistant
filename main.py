@@ -2,8 +2,8 @@ import streamlit as st
 from prompt_templates import PROMPT_MODELS
 import openai
 
-openai.api_key = "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"
-
+# Настройка клиента OpenAI
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 # Кнопка с флагом
