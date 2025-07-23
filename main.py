@@ -91,3 +91,17 @@ with st.expander("💬 Мне не хватает..."):
         with open("feedback_log.txt", "a", encoding="utf-8") as f:
             f.write(f"Отзыв:\n{feedback}\nEmail: {user_email}\n---\n")
         st.success("Спасибо за ваш отзыв!")
+        
+        st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; margin-top: 30px;'>
+        <a href="https://t.me/your_username" target="_blank">
+            <button style='font-size:18px; padding:10px 20px; border:none; background-color:#25A9E0; color:white; border-radius:5px; cursor:pointer;'>
+                🚀 Заказать настройку Яндекс Директ
+            </button>
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
