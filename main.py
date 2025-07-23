@@ -94,6 +94,7 @@ with st.expander("💬 Мне не хватает..."):
         
         st.markdown("---")
         st.markdown("---")
+# Кнопка заказать настройку
 st.markdown(
     """
     <div style='text-align: center; font-size: 16px; margin-top: 30px;'>
@@ -104,15 +105,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown("---")
-st.markdown(
-    """
-    <div style='text-align: center; font-size: 16px; margin-top: 30px;'>
-        <a href="https://promarketer.tilda.ws/" target="_blank" style="text-decoration: none; color: #1f77b4;">
-            👉 Заказать настройку Яндекс Директ
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+
                 
