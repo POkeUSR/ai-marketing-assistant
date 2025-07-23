@@ -96,7 +96,7 @@ with st.expander("💬 Мне не хватает..."):
 st.markdown(
     """
     <div style='text-align: center; margin-top: 30px;'>
-        <a href="https://t.me/your_username" target="_blank">
+        <a href="https://promarketer.tilda.ws/" target="_blank">
             <button style='font-size:18px; padding:10px 20px; border:none; background-color:#25A9E0; color:white; border-radius:5px; cursor:pointer;'>
                 🚀 Заказать настройку Яндекс Директ
             </button>
