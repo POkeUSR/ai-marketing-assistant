@@ -105,5 +105,16 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+# Кнопка заказать Ai
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 16px; margin-top: 30px;'>
+        <a href="https://c2r.asia/ai" target="_blank" style="text-decoration: none; color: #1f77b4;">
+            👉 Разработка AI-ассистентов под ключ для бизнеса
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
                 
