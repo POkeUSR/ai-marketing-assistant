@@ -46,16 +46,14 @@ product = st.text_input("📦 Продукт/услуга", value=st.session_sta
 
 model_option = st.selectbox("📌 Модель копирайтинга", ["Сгенерировать по всем"] + list(PROMPT_MODELS.keys()))
 
-st.markdown(
-    """
-    <div style='text-align: center; margin-top: 20px; font-size: 15px;'>
-        <a href="https://promarketer.tilda.ws/" target="_blank" style="color:#0366d6; text-decoration: none;">
-            👉 Заказать настройку Яндекс Директ
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+if st.button("🚀 Сгенерировать креатив"):
+    with st.spinner("Генерация текста..."):
+        system_prompt = (
+            f"Ты — копирайтер. На основе информации:\n"
+            f"- Аудитория: {audience}\n"
+            f"- Проблема: {problem}\n"
+            f"- Продукт: {product}\n"
+        )
 
         if model_option == "Сгенерировать по всем":
             for model_name, model_prompt in PROMPT_MODELS.items():
@@ -95,15 +93,3 @@ with st.expander("💬 Мне не хватает..."):
         st.success("Спасибо за ваш отзыв!")
         
         st.markdown("---")
-st.markdown(
-    """
-    <div style='text-align: center; margin-top: 30px;'>
-        <a href="https://promarketer.tilda.ws/" target="_blank">
-            <button style='font-size:18px; padding:10px 20px; border:none; background-color:#25A9E0; color:white; border-radius:5px; cursor:pointer;'>
-                🚀 Заказать настройку Яндекс Директ
-            </button>
-        </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
