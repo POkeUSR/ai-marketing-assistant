@@ -1,6 +1,6 @@
 import streamlit as st
 from prompt_templates import PROMPT_MODELS
-import openai
+from openai import OpenAI
 
 # Настройка клиента OpenAI
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
